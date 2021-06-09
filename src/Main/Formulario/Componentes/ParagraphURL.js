@@ -1,6 +1,7 @@
 import React from 'react'
 
-export const ParagraphURL = () => {
+export const ParagraphURL = React.memo(() => {
+    console.log('paragraphURL');
     return (
         <div className="displayFlex mt-4">
         <i className="fa fa-info-circle mt-1"></i>
@@ -11,3 +12,4 @@ export const ParagraphURL = () => {
         </div>
     );
 }
+)

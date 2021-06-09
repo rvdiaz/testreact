@@ -1,6 +1,7 @@
 import React from 'react'
 
-export const Logo = () => {
+export const Logo = React.memo(() => {
+    console.log('logo');
     return (
         <div>
             <div className="displayFlex mt-3">
@@ -12,4 +13,4 @@ export const Logo = () => {
             </div>
         </div>
     )
-}
+})

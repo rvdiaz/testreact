@@ -2,6 +2,8 @@ import React, { useContext } from 'react'
 import { DataContext } from '../../Context/DataContext';
 
 export const CantPersonas = () => {
+
+ 
     const arrayCantPersonas=['Solo yo','2- 10','11- 25','26- 50','51- 100','500 +'];
     const {data,setdata}=useContext(DataContext);
     const {cantPersonas}=data;

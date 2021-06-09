@@ -2,6 +2,8 @@ import React, { useContext } from 'react'
 import { DataContext } from '../../Context/DataContext';
 
 export const PaletaColores = () => {
+    
+
     const coloresPaleta=['#09c4c4','green','#059e38','#dba308','orange','#d86608','red','#b80874','#8d028d'];
     const {data,setdata}=useContext(DataContext);
     const {colorthema}=data;

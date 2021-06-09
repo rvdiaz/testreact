@@ -1,13 +1,15 @@
 import React, { useContext, useEffect, useRef } from 'react'
 import { DataContext } from '../../Context/DataContext';
 
-export const Privacidad = () => {
+export const Privacidad =() => {
+    
     const {data,setdata}=useContext(DataContext);
     const {privacidad}=data;
     const privado=useRef();
     const publico=useRef();
     
     useEffect(() => {
+        console.log("effect privacidad");
         switch (privacidad) {
             case "privado":
                     privado.current.checked=true;
